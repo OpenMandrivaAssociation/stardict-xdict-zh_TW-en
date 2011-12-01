@@ -27,12 +27,12 @@ This package contains xdict database converted into stardict format.
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/stardict/dic
-install -m 0644 * $RPM_BUILD_ROOT%{_datadir}/stardict/dic
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_datadir}/stardict/dic
+install -m 0644 * %{buildroot}%{_datadir}/stardict/dic
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
