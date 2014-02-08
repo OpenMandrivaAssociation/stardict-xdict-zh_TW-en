@@ -1,5 +1,5 @@
 %define	version	2.4.2
-%define release %mkrel 9
+%define release 10
 %define dict_format_version	2.4.2
 
 Summary:	Xdict Traditional Chinese -> English dictionary for stardict 2
